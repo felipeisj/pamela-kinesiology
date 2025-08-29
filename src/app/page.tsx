@@ -146,7 +146,10 @@ export default function Home() {
         
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-20">
           <div className="text-center max-w-4xl mx-auto">
-            
+            <div className="inline-flex items-center bg-white/80 backdrop-blur-sm rounded-full px-6 py-3 mb-8 shadow-lg">
+              <CheckCircle className="w-5 h-5 text-emerald-500 mr-2" />
+              <span className="text-emerald-700 font-semibold">2+ años de experiencia</span>
+            </div>
             
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
               <span className="bg-gradient-to-r from-emerald-600 via-teal-600 to-cyan-600 bg-clip-text text-transparent">
@@ -304,7 +307,7 @@ export default function Home() {
               
               <div className="mt-8 bg-white/80 backdrop-blur-sm rounded-2xl p-6 shadow-lg max-w-md mx-auto">
                 <blockquote className="text-gray-700 italic text-lg">
-                  "Mi compromiso es acompañarte en cada paso hacia tu recuperación completa y bienestar óptimo."
+                  &ldquo;Mi compromiso es acompañarte en cada paso hacia tu recuperación completa y bienestar óptimo.&rdquo;
                 </blockquote>
                 <div className="mt-4 font-semibold text-emerald-600">- Pamela Prieto</div>
               </div>
@@ -333,7 +336,7 @@ export default function Home() {
                     <Star key={i} className="w-5 h-5 text-yellow-500 fill-current" />
                   ))}
                 </div>
-                <p className="text-gray-700 italic mb-6 leading-relaxed">"{testimonial.text}"</p>
+                <p className="text-gray-700 italic mb-6 leading-relaxed">&ldquo;{testimonial.text}&rdquo;</p>
                 <div className="font-semibold text-emerald-600">- {testimonial.name}</div>
               </div>
             ))}
